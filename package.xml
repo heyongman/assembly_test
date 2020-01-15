@@ -1,0 +1,37 @@
+<assembly xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id></id>
+    <formats>
+        <format>tar.gz</format>
+        <format>dir</format>
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory>
+    <fileSets>
+        <fileSet>
+            <directory>core/target/assembly_test/</directory>
+            <includes>
+                <include>**/*.*</include>
+            </includes>
+            <outputDirectory>assembly_test</outputDirectory>
+        </fileSet>
+
+        <!-- reader -->
+        <fileSet>
+            <directory>mysqlreader/target/assembly_test/</directory>
+            <includes>
+                <include>**/*.*</include>
+            </includes>
+            <outputDirectory>assembly_test</outputDirectory>
+        </fileSet>
+
+
+        <!-- writer -->
+<!--        <fileSet>-->
+<!--            <directory>mysqlwriter/target/assembly_test/</directory>-->
+<!--            <includes>-->
+<!--                <include>**/*.*</include>-->
+<!--            </includes>-->
+<!--            <outputDirectory>assembly_test</outputDirectory>-->
+<!--        </fileSet>-->
+
+    </fileSets>
+</assembly>
